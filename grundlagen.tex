@@ -29,28 +29,22 @@ Durch die Technologien des \buzz{Web 2.0} werden die Daten i.d.R. in Datenbanken
 
 Im \buzz{Web 3.0} werden die Daten bzw. Informationen des Web 2.0 durch Beifügung von Bedeutung zu Information bzw. informativem Wissen veredelt\footnote{vgl. \cite{nyt:markoff}}. Hierdurch soll es möglich werden, die schnell steigenden Datenmengen sinnvoll zu nutzen\footnote{vgl. \cite{tsp:tolksdorf}}. Die Bezeichnung \buzz{semantisches Web} ermöglicht eine Abgrenzung gegenüber anderen Interpretationen des Buzzwords \buzz{Web 3.0}, wie sie z.T. im Marketing\footnote{z.B. „Web 3.0 marketing is the convergence of new technologies and rapidly changing consumer buying trends.“ in \cite{web3market}, Abschnitt „What is Web 3.0 Marketing?“} oder in der Politikwissenschaft\footnote{z.B. „Is this Web 3.0? Not a tech-upgrade, a smarter algorithm, slicker fibre optic or better Bluetooth beam. Instead, Web 3.0 as in an outcome, the demonstrated consequences of being able to access information?“ in \cite{web3pol}, Abschnitt „Web 3.0: Regime Change“} zu finden sind.
 
-\section{Die Bedeutung der Daten}
+\subsection{Die Bedeutung der Daten}
 
-\subsection{Metadaten}
+Den vorhandenen oder neu gesammelten Daten kann auf verschiedene Arten Bedeutung beigefügt werden. Sogenannte \buzz{Meta--Daten} beschreiben Dateien durch Schlagworte oder Zuordnung von Werten zu definierten Schlüsselworten. Die Meta--Daten können in seperaten Dateien gespeichert werden\footnote{z.B. in den .INFO--Dateien in der Benutzeroberfläche des Comodore Amiga „Workbench“, oder in der Bilderdatenbank der Applikation „Adobe Lightroom“}. Ebenfalls möglich ist die Speicherung direkt in der entsprechenden Datei\footnote{z.B. EXIF--Daten in Bilddateien oder Informationen zum Werk in MP3--Dateien}. Diese Daten werden i.d.R. automatisch\footnote{z.B. durch die Kamera beim fotografieren.} oder halbautomatisch\footnote{Einmalig manuell, dann Bereitstellung für andere Nutzer per CDDB oder andere Dienste.} den Daten zugeordnet. Manche Metadaten können auch bei Abruf direkt ermittelt werden\footnote{z.B. Dateigröße}.
 
-zum Zeitpunkt der Erzeugung der Daten
-oder on the fly (Genutzter Plattenplatz, etc.)
+In textbasierten Dateiformaten wie XML werden hingegen einzelne Elemente durch Markup--Tags maschinenlesbar mit Bedeutung versehen werden. So werden Zeichenketten als Namen, Adressen, Telefonnummer etc. identifizier-- und auswertbar. Die Meta--Daten sind hier Teil des Datenstroms.
 
-entweder in der Datei (EXIF) oder extern .info bei Amiga
+Durch Techniken wie Gesichtserkennung oder Textanalyse können Meta--Daten auch automatisch aus den Daten generiert werden. Hierbei bestimmt die Menge der auszuwertenden Daten und die Qualität der bereits vorhandenen Metadaten die Qualität der Ergebnisse.
 
-Auch Textverarbeitungsdokumente, etc.,
-
-\subsection{Semantisches Markup}
-
-Beschreibung der Daten außerhalb der Datei
-
-\subsection{Automatische Informationsgewinnung}
-
-z.B. Gesichtserkennung
-
-\subsection{Automatische Wissensgewinnung}
-
-Durch Verknüpfung von Informationen kann Wissen generiert werden:\\
+Durch Regelwerke, hinterlegte Logik, Verknüpfungen und standardisiertem Datenaustausch können aus den Informationen auch Wissen erzeugt werden:
 Person A ist auf einem Bild zusammen mit Person B zu sehen (Gesichtserkennung). Die Geoinformation und Uhrzeit (EXIF--Tags) zeigen, dass das Foto auf einer Veranstaltung aufgenommen wurde, das zu diesem Zeitpunkt an diesem Ort statt fand (Semantisches Markup der Veranstaltung).
+Daraus kann auf politische Gesinnung, Musikgeschmack und/oder Trinkfreudigkeit von Person A geschlossen werden.
 
-Daraus kann auf politische Gesinnung oder Trinkfreudigkeit von Person A geschlossen werden.
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.4\textwidth]{layerCake-4.png}
+\caption{Der Stack des semantischen Web}
+\label{pic:tsemanticstack}
+\end{center}
+\end{figure}
