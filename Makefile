@@ -14,6 +14,7 @@ endif
 ifeq ($(UNAME_S), Darwin)
 	pdflatexcmd = /usr/texbin/pdflatex --shell-escape
 	bibtexcmd = /usr/texbin/bibtex
+	indexcmd = /usr/texbin/makeindex
 	pdfviewercmd = open
 endif
 
@@ -22,8 +23,13 @@ all: $(filename).tex $(neededfiles) latex
 latex:
 	$(pdflatexcmd) $(filename)
 	$(bibtexcmd) $(filename)
+	$(indexcmd) $(filename)
 	$(pdflatexcmd) $(filename)
+	$(bibtexcmd) $(filename)
+	$(indexcmd) $(filename)
 	$(pdflatexcmd) $(filename)
+	$(bibtexcmd) $(filename)
+	$(indexcmd) $(filename)
 
 view:
 	if [ -f $(filename).pdf ]; then \
